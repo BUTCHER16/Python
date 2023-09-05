@@ -1,0 +1,15 @@
+Selenium Webdriver 
+------------------
+
+What is WebDriver?
+
+-> WebDriver is one of the component in selenium
+-> WebDriver is an module
+
+fireFox browser ----> FireFox()
+Chrome ----> Chrome()
+edge ----> Edge()
+
+
+-> WebDriver is an API( Apllication Programming Interface )
+	
