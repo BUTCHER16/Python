@@ -1,19 +1,17 @@
 class Solution:
     def merge(self, nums1,nums2) -> None:
         num1 = []
-        num2 = []
         for i in nums1:
             if i >= 1:
                 num1.append(i)
         for j in nums2:
             if j >= 1:
-                num2.append(j)
-        result = num1 + num2
-        ans = sorted(result)
-        return ans
+                num1.append(j)
+        nums1 = sorted(num1)
+        return nums1
 solution = Solution()
-nums1 = [0]
-nums2 = [1]
+nums1 = [1]
+nums2 = [0]
 print(solution.merge(nums1,nums2))
 
 
