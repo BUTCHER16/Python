@@ -1,0 +1,29 @@
+Great! Here's your **Task 2**:
+
+---
+
+### ✅ **Task 2: String Manipulation and Formatting**
+
+#### **Instructions:**
+
+Create a Python script that:
+
+1. Takes a full name as input from the user (e.g., "John Doe").
+2. Converts the name to:
+
+   * Uppercase
+   * Lowercase
+   * Title Case
+3. Counts the number of characters (excluding spaces).
+4. Reverses the full name.
+5. Checks if the name contains the letter `'a'` or `'A'`.
+6. Splits the name into first and last name using `.split()`.
+
+#### **Bonus:**
+
+* Use an f-string to print the formatted result:
+  `"Hello, [FIRST_NAME]! Your name has [X] characters."`
+
+---
+
+

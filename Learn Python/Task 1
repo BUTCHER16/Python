@@ -1,0 +1,27 @@
+Great! Here's your **Task 1** to recall the Python basics:
+
+---
+
+### ✅ **Task 1: Variables, Data Types, and Basic Operations**
+
+#### **Instructions:**
+
+1. Create a Python script that:
+
+   * Takes two numbers as input from the user.
+   * Performs and prints the result of:
+
+     * Addition
+     * Subtraction
+     * Multiplication
+     * Division
+     * Modulus
+     * Exponentiation
+   * Prints the data types of all inputs and outputs.
+
+#### **Bonus:**
+
+* Use `f-string` formatting for the output.
+* Add one string input and print its length and reversed version.
+
+
