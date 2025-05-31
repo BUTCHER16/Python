@@ -1,0 +1,26 @@
+Great! Here's your **Task 4**:
+
+---
+
+### ✅ **Task 4: Loops and Ranges**
+
+#### **Instructions:**
+
+Write a Python script that:
+
+1. Prints all numbers from 1 to 100 using a `for` loop.
+2. For each number:
+
+   * Print `"Even"` if it’s even.
+   * Print `"Odd"` if it’s odd.
+3. Calculate and print the **sum of all even numbers** between 1 and 100.
+4. Do the same using a `while` loop.
+
+#### **Bonus:**
+
+* Skip all numbers divisible by 7 using `continue`.
+* Stop the loop if the number reaches 90 using `break`.
+
+---
+
+Say **“Next”** when you're ready for Task 5.
