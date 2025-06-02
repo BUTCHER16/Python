@@ -1,0 +1,41 @@
+Awesome! Here's your **Task 8**:
+
+---
+
+### ✅ **Task 8: Lambda, Map, Filter, and Reduce**
+
+#### **Instructions:**
+
+1. Create a lambda function to:
+
+   * Add 10 to a number.
+   * Multiply two numbers.
+   * Return `True` if a number is even.
+
+2. Use `map()` to:
+
+   * Square all numbers in a list: `[1, 2, 3, 4, 5]`.
+
+3. Use `filter()` to:
+
+   * Get all numbers greater than 10 from: `[4, 15, 8, 22, 7, 3]`.
+
+4. Use `reduce()` from the `functools` module to:
+
+   * Calculate the product of all numbers in a list: `[1, 2, 3, 4]`.
+
+#### **Bonus:**
+
+* Combine `map()` and `filter()` to:
+
+  * Square only the even numbers from `[1, 2, 3, 4, 5, 6]`.
+
+---
+
+🧠 **Hint:**
+
+```python
+from functools import reduce
+```
+
+Say **“Next”** when you're ready for Task 9.

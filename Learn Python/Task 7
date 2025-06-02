@@ -1,0 +1,38 @@
+You're doing great! Here's your **Task 7**:
+
+---
+
+### ✅ **Task 7: Functions and Parameters**
+
+#### **Instructions:**
+
+1. Write a function `greet(name)` that prints:
+   `"Hello, [name]! Welcome back."`
+
+2. Write a function `is_even(number)` that:
+
+   * Returns `True` if the number is even, else `False`.
+
+3. Write a function `calculate_area(length, width=10)` that:
+
+   * Uses a **default parameter**.
+   * Returns the area of a rectangle.
+
+4. Write a function `sum_all(*args)` that:
+
+   * Accepts any number of arguments.
+   * Returns the total sum.
+
+5. Write a function `user_profile(**kwargs)` that:
+
+   * Accepts details like name, age, and city.
+   * Prints the user details in a formatted string.
+
+#### **Bonus:**
+
+* Call each function and test with multiple inputs.
+* Combine `*args` and `**kwargs` in one function and explain the output.
+
+---
+
+Say **“Next”** when you're ready for Task 8.

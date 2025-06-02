@@ -1,0 +1,44 @@
+Great progress! Here's your **Task 6**:
+
+---
+
+### ✅ **Task 6: Tuples, Sets, and Dictionaries**
+
+#### **Instructions:**
+
+1. **Tuples:**
+
+   * Create a tuple with 5 different fruits.
+   * Access the 2nd and 4th item using indexing.
+   * Try modifying an element and observe the error (immutability).
+
+2. **Sets:**
+
+   * Create two sets:
+
+     ```python
+     set1 = {1, 2, 3, 4, 5}
+     set2 = {4, 5, 6, 7}
+     ```
+   * Perform and print:
+
+     * Union
+     * Intersection
+     * Difference (`set1 - set2`)
+   * Add a new item to `set1`.
+
+3. **Dictionaries:**
+
+   * Create a dictionary of 3 employees with their names as keys and salaries as values.
+   * Add a new employee to the dictionary.
+   * Update the salary of an employee.
+   * Loop through the dictionary and print names and salaries.
+
+#### **Bonus:**
+
+* Use `get()` to safely access a key that might not exist.
+* Check if a key exists before updating.
+
+---
+
+Say **“Next”** when you're ready for Task 7.
