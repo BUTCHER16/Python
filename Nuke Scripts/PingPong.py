@@ -1,25 +1,42 @@
 import nuke
+import threading
+import time
 
-# Toggle stereo views (left ↔ right)
-def toggle_eye_view():
+# Shared toggle control variable
+eye_toggle_running = [False]  # Mutable list for thread-safe toggle
+
+# Function that runs in background thread
+def eye_pingpong_loop(interval=0.2):  # ← faster toggle (was 0.5)
     views = nuke.views()
     if len(views) < 2:
-        nuke.message("Stereo views not detected. At least two views are required.")
+        nuke.executeInMainThread(lambda: nuke.message("Need at least 2 stereo views."))
         return
 
-    viewer = nuke.activeViewer()
-    if viewer is None:
-        nuke.message("No active Viewer found.")
-        return
+    while eye_toggle_running[0]:
+        def toggle():
+            viewer = nuke.activeViewer()
+            if not viewer:
+                return
+            current = viewer.view()
+            next_view = views[1] if current == views[0] else views[0]
+            viewer.setView(next_view)
 
-    current_view = viewer.view()
-    try:
-        current_index = views.index(current_view)
-        next_index = (current_index + 1) % len(views)
-        viewer.setView(views[next_index])
-    except ValueError:
-        viewer.setView(views[0])  # default to first view if mismatch
+        # Toggle view on main thread
+        nuke.executeInMainThread(toggle)
+        time.sleep(interval)
 
-# Add menu and shortcut
+# Function triggered by menu/shortcut
+def toggle_eye_pong():
+    if eye_toggle_running[0]:
+        eye_toggle_running[0] = False
+        nuke.tprint("👁️ Eye toggle stopped.")
+    else:
+        eye_toggle_running[0] = True
+        thread = threading.Thread(target=eye_pingpong_loop, args=(0.2,))  # ← speed here too
+        thread.daemon = True
+        thread.start()
+        nuke.tprint("👁️ Eye toggle started (Shift+E to stop).")
+
+# Add menu item with shortcut
 stereo_menu = nuke.menu("Nuke").addMenu("Stereo")
-stereo_menu.addCommand("Toggle Eye View", toggle_eye_view, "shift+e")
+stereo_menu.addCommand("Auto Toggle Eyes (Shift+E)", toggle_eye_pong, "shift+e")
